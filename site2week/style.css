@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Helvetica;
+	font-size: 16px;
+}
+
+h1 {
+	margin-bottom: 20px;
+	font-size: 150%;
+	text-align: center;
+}
+
+body {
+	background-color: cadetblue;
+}
+
+p {padding: 5px}
+
+
+#Au {
+	background-color: gold;
+}
+
+#Ag {
+	background-color: silver;
+}
+
+#Cu {
+	background-color: indianred;
+}
+
+section {
+	position: relative;
+	font-size: 125%;
+	float: left;
+	margin-bottom: 20px;
+	}
+
+section > div {
+	position: relative;
+	margin: auto;
+	border: 1px solid black;
+	width: 90%;
+	}
+
+section > div > div{
+	position: relative;
+	top: 0px;
+	right: -75%;
+	width: 25%;
+	font-weight: bold;		
+	border: 1px solid black;
+	font-size: 150%;
+	text-align: right;
+	padding: 3px;
+}
+
+
+@media (min-width: 992px){
+
+	section {width: 33.33%;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	div section:nth-child(1) {width: 50%; }
+	div section:nth-child(2) {width: 50%; }
+	div section:nth-child(3) {width: 100%; }
+}
+
+@media (max-width: 767px) {
+
+	section {width: 100%;}
+}
